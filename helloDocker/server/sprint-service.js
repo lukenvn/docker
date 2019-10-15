@@ -1,12 +1,12 @@
 var request = require("request");
 
-const authorizationInfo = 'Basic bnZuaHVuZzpTYXYzNFRoZUJpa2U=';
+const authorizationInfo = 'Basic <user:pass in encode base64>';
 
 var findIssueQuery = 'project = AF AND issuetype in standardIssueTypes() AND Sprint = SPRINT_ID  AND Team = TEAM_NAME';
 
 var findActiveSprintOptions = {
   method: 'GET',
-  url: 'https://jira.axonivy.com/jira/rest/agile/1.0/board/73/sprint',
+  url: 'https://<jira>/jira/rest/agile/1.0/board/73/sprint',
   qs: { state: 'active' },
   headers:
   {
@@ -16,7 +16,7 @@ var findActiveSprintOptions = {
 };
 var findIssuesOptions = {
   method: "GET",
-  url: "https://jira.axonivy.com/jira/rest/api/latest/search",
+  url: "https://<jira>/jira/rest/api/latest/search",
   qs: {
     jql: ''
   },
