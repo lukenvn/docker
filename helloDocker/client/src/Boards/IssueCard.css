@@ -1,0 +1,17 @@
+.story-point{
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 395px;
+
+}
+
+.story-key{
+    float: left; 
+    margin-top: 10px
+}
+
+
+.hide-sprint-goal{
+    display: none;
+}
+
